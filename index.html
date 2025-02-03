@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Example</title>
+    <title>Neon QR Code Generator</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>QR Code Generator</h1>
-        <canvas id="qr-code"></canvas>
+    <div class="content">
         <button id="generate">Generate QR Code</button>
+        <div id="qr-container">
+            <canvas id="qr-code"></canvas>
+            <p id="scan-text">Scan Me</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
